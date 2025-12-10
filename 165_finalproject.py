@@ -128,7 +128,7 @@ print("F1-score:", f1_score(y_test, y_pred_svc))
 print("Confusion matrix:\n", confusion_matrix(y_test, y_pred_svc))
 print("\n")
 
-# --- Misclassified tweets for discussion ---
+# Misclassified tweets for discussion
 misclassified_idx = np.where(y_test != y_pred_lr)[0]
 misclassified_tweets = df.iloc[misclassified_idx]
 
